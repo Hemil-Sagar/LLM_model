@@ -34,7 +34,10 @@ Welcome to the documentation for your GitHub repository\! This guide provides in
 
 **🚀 Example Code** 
 
-| import ffmpeg  \# Extract audio from a video file ffmpeg.input('input\_video.mp4').output('output\_audio.mp3').run() print("Audio extracted successfully\! 🎉")    |
+| import ffmpeg
+|# Extract audio from a video file|
+|ffmpeg.input('input\_video.mp4').output('output\_audio.mp3').run() |
+|print("Audio extracted successfully\! 🎉")   |
 | :---- |
 
  
@@ -51,7 +54,13 @@ Install Whisper using pip:
 
 **🚀 Example Code** 
 
-| import whisper  \# Load the Whisper model model \= whisper.load\_model("base")  \# Transcribe audio to text result \= model.transcribe("output\_audio.mp3") print("Transcription: 📝") print(result\["text"\])    |
+| import whisper 
+|# Load the Whisper model|
+|model \= whisper.load\_model("base")|
+|# Transcribe audio to text|
+|result \= model.transcribe("output\_audio.mp3")|
+|print("Transcription: 📝") |
+|print(result\["text"\]) |
 | :---- |
 
  
@@ -67,7 +76,12 @@ pip install langchain-ollama
 
 **🚀 Example Code** 
 
-| from langchain\_ollama import OllamaLLM  \# Initialize Ollama ollama\_model \= OllamaLLM(model="summarizer")  \# Summarize text summary \= ollama\_model.invoke("Summarize this text: Your long text goes here.") print("Summary: 📄") print(summary)    |
+| from langchain\_ollama import OllamaLLM  |
+|# Initialize Ollama|
+| ollama\_model \= OllamaLLM(model="summarizer")|
+|# Summarize text |
+|summary \= ollama\_model.invoke("Summarize this text: Your long text goes here.") |
+|print("Summary: 📄") print(summary) |
 | :---- |
 
  
@@ -84,7 +98,10 @@ Install Streamlit using pip:
 
 **🚀 Example Code** 
 
-| import streamlit as st  \# Create a simple Streamlit app st.title("Hello, Streamlit\! 👋") st.write("This is a simple web app built with Streamlit.")  |
+| import streamlit as st |
+|# Create a simple Streamlit app|
+|st.title("Hello, Streamlit\! 👋")|
+|st.write("This is a simple web app built with Streamlit.")  |
 | :---- |
 
 
@@ -108,7 +125,9 @@ Install the Ngrok Python package:
 
 **🚀 Example Code** 
 
-| from pyngrok import ngrok  \# Start an Ngrok tunnel public\_url \= ngrok.connect(addr="8000", proto="http") print(f"Your app is now live at: {public\_url} 🌍")  |
+| from pyngrok import ngrok |
+|# Start an Ngrok tunnel public\_url \= ngrok.connect(addr="8000", proto="http")| 
+|print(f"Your app is now live at: {public\_url} 🌍")  |
 | :---- |
 
 
